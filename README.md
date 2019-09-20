@@ -1,2 +1,5 @@
 # Portfolio-Website
-Code used for my website
+Check out my [website][website]!
+
+
+[website]: http://danielcummings.name
