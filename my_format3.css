@@ -1,0 +1,232 @@
+/********************************************************/
+/*                       General                        */
+/********************************************************/
+html {
+  scroll-behavior: smooth;
+}
+/* Removes pages default margins so content can expand to entire page */
+body {
+	margin: 0;
+}
+span {
+  color: dodgerblue;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+}
+#name {
+  font-size: 32px;
+}
+h2 {
+  text-align: center;
+}
+blockquote {
+  font-style: italic;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 55px;
+}
+th {
+  height: 40px;
+  background-color: #14C8FF;
+  color: black;
+}
+td {
+  height: 25px;
+  padding-left: 5px;
+}
+td.num {
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/********************************************************/
+/*                       Banner                         */
+/********************************************************/
+#banner {
+  height: 100px;  /* length in pixels of banner (should be consistent with background size) */
+  background-image: url("images/cyber.jpg"); /* banner image */
+  background-size: auto  /* dimensions of banner image */
+}
+
+/********************************************************/
+/*                      Side Menu                       */
+/********************************************************/
+#menu-content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%; /* percentage of page menu should take up (should be consistent with content)*/
+  background-image: url("images/gradient_blue.png"); /* side menu image */
+  background-repeat: repeat-y; /* menu image repeats going top to bottom */
+  background-size: auto;  /* dimensions of menu image */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+li.menu-item a {
+  display: block;
+  color: white;    /* color of menu item text */
+  padding: 8px 16px;  /* vertical and horizontal spacing of menu items */
+  text-decoration: none;
+}
+li.menu-item a.active {
+  background-color: #3000ff; /* background color of menu item currently clicked on */
+  color: white;  /* text color of menu item currently clicked on */
+}
+li.menu-item a:hover:not(.active) {
+  background-color: #777;  /* background color of menu item being hovered over with mouse (not the active tab) */
+  color: white;  /* text color of menu item being hovered over with mouse (not the active tab) */
+}
+li.menu-item .material-icons{
+  color: white;   /* menu icon color */
+  padding-right: 10px;  /* space between icon and text */
+  font-size: 16px;  /* size of the icon (should be consistent with text size) */
+  float: left;
+}
+
+/********************************************************/
+/*                       Content                        */
+/********************************************************/
+div.content {
+	padding: 24px 100px; /* spacing of content from top and sides of the content box */
+  overflow: auto;
+}
+#danny {
+  width:260px;
+  height:426px;
+  float:left;
+  padding-right:20px;
+}
+#home-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+  display: block;
+}
+#marylandm {
+  width:175px;
+  height:160px;
+  float:right;
+}
+#ab {
+  width:160px;
+  height:160px;
+  float:left;
+  padding-right:20px;
+}
+#r1, #r2, #r3, #r4 {
+  width:200px;
+  height:100px;
+}
+#r1, #r2 {
+  padding-bottom:4px;
+}
+#matchmaker {
+  float:left;
+  padding-right:20px;
+  width:400px;
+  height:200px;
+}
+#chess {
+  float:right;
+  padding-left:20px;
+  width:200px;
+  height:200px;
+}
+div.sub-sec {
+  background-color: lightsteelblue;
+  margin: 20px 20px 0px 20px;
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+
+/********************************************************/
+/*                        Mobile                        */
+/********************************************************/
+* {
+  box-sizing: border-box;
+}
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
+[class*="col-"] {
+  float: left;
+  border: 0.1px solid white;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .col-3 {display: none;}
+  #banner {
+    height: 50px;
+  }
+  p, li, blockquote {
+    font-size: 8px;
+  }
+  span {
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h1, #name {
+    font-size: 24px;
+  }
+  th {
+    height: 25px;
+  }
+  td {
+    height: 10px;
+  }
+  table {
+    font-size: 8px;
+  }
+  #danny {
+    width:140px;
+    height:213px;
+  }
+  #marylandm {
+    width:87px;
+    height:80px;
+  }
+  #ab {
+    width:80px;
+    height:80px;
+  }
+  #r1, #r2, #r3, #r4 {
+    width:100px;
+    height:50px;
+  }
+  #matchmaker {
+    width:200px;
+    height:100px;
+  }
+  #chess {
+    width:100px;
+    height:100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  blockquote {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  #matchmaker {
+    width:100px;
+    height:50px;
+  }
+}
